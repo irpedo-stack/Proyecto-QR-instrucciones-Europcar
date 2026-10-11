@@ -4,35 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EUROPCAR - Recogida</title>
+    <meta name="description" content="Encuentra fácilmente las instrucciones para recoger tu vehículo Europcar.">
+    <title>Europcar - Recogida de vehículos</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
 <body>
 
     <div id="inicio">
 
         <h1>Europcar</h1>
 
-        <h2>¿Dónde te hemos dicho que está tu vehículo?</h2>
+        <p id="bienvenida">Bienvenido. Te ayudamos a encontrar tu vehículo.</p>
 
-        <button id="eurostars">HOTEL EUROSTARS</button>
+        <h2 id="tituloIdioma">Selecciona tu idioma</h2>
 
-        <button id="vialia">VIALIA</button>
+        <div id="idiomas">
+            <button class="boton-idioma" data-idioma="es">🇪🇸 Español</button>
+            <button class="boton-idioma" data-idioma="en">🇬🇧 English</button>
+            <button class="boton-idioma" data-idioma="fr">🇫🇷 Français</button>
+            <button class="boton-idioma" data-idioma="de">🇩🇪 Deutsch</button>
+            <button class="boton-idioma" data-idioma="it">🇮🇹 Italiano</button>
+            <button class="boton-idioma" data-idioma="pt">🇵🇹 Português</button>
+            <button class="boton-idioma" data-idioma="zh">🇨🇳 中文</button>
+            <button class="boton-idioma" data-idioma="ko">🇰🇷 한국어</button>
+            <button class="boton-idioma" data-idioma="ja">🇯🇵 日本語</button>
+        </div>
+
+        <div id="seleccionParking" style="display: none;">
+
+            <h2 id="tituloParkingSeleccion">¿Dónde te hemos indicado que está aparcado tu vehículo?</h2>
+
+            <button id="eurostars">HOTEL EUROSTARS</button>
+
+            <button id="vialia">VIALIA</button>
+
+        </div>
 
     </div>
 
     <div id="instrucciones" style="display: none;">
 
-         <h1 id="tituloParking"></h1>
+        <h1 id="tituloParking"></h1>
 
-         <h2>Instrucciones para llegar al parking asignado</h2>
+        <h2 id="subtituloInstrucciones">Instrucciones para llegar al parking asignado</h2>
 
-         <div id="pasos"></div>
+        <div id="pasos"></div>
 
-         <button id="volver">← Volver</button>
+        <button id="volver">← Volver</button>
 
     </div>
 
